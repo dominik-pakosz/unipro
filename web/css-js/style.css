@@ -1,0 +1,20 @@
+.up-mainpage {
+    margin-top: 20px;
+
+}
+
+/* Center align the text within the three columns below the carousel */
+.up-mainpage .col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.up-mainpage h2 {
+    font-weight: normal;
+}
+.up-mainpage .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.up-mainpage-button {
+    float: right;
+}

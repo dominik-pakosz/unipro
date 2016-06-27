@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Uni-pro wentylatory przemysłowe{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('bootstrap/dist/css/bootstrap.css') }}" />
+            <link rel="stylesheet" href="{{ asset('menu/css/reset.css') }}" />
+            <link rel="stylesheet" href="{{ asset('menu/css/style.css') }}" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <header>
+            <div class="cd-logo"><a href="#0"><img src="{{ asset('menu/img/cd-logo.svg') }}" alt="Logo"></a></div>
+
+            <nav class="cd-main-nav-wrapper">
+                <ul class="cd-main-nav">
+                    <li><a class="btn btn-info" href="#0">Dobierz wentylator</a></li>
+                    <li><a href="#0">O firmie</a></li>
+                    <li><a href="#0">Oferta</a></li>
+                    <li><a href="#0">Usługi</a></li>
+                    <li><a href="#0">Kontakt</a></li>
+                    <li><a href="#0">Galeria</a></li>
+                    <li>
+                        <a href="#0" class="cd-subnav-trigger"><span>Inne</span></a>
+                        <ul>
+                            <li class="go-back"><a href="#0">Menu</a></li>
+                            <li><a href="#0">Działalność</a></li>
+                            <li><a href="#0">Stanowisko badawcze</a></li>
+                            <li><a href="#0">Technika doboru</a></li>
+                            <li><a href="#0" class="placeholder">Placeholder</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- .cd-main-nav -->
+            </nav> <!-- .cd-main-nav-wrapper -->
+
+            <a href="#0" class="cd-nav-trigger"><span></span></a>
+        </header>
+        <main class="cd-main-content">
+            {% block body %}{% endblock %}
+        </main>
+        {% block javascripts %}
+            <script src="{{ asset('menu/js/modernizr.js') }}"></script>
+            <script src="{{ asset('jquery/jquery.js') }}"></script>
+            <script src="{{ asset('bootstrap/dist/js/bootstrap.js') }}"></script>
+            <script src="{{ asset('menu/js/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
