@@ -1,0 +1,6 @@
+unipro\PageBundle\Entity\PagesContent:
+    pages{1..8}:
+        route: <route()>
+        title: <text(30)>
+        description: <realText(6000)>
+        postedAt: <dateTime()>

@@ -1,20 +1,70 @@
-.up-mainpage {
-    margin-top: 20px;
-
+/*all pages*/
+footer {
+    background-color: #444444;
+    height: 200px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+}
+.cd-main-content {
+    background-color: #FFFFFF !important;
+    background: url(http://www.skorosze11.pl/Portals/Skorosze11/Skins/images/bg.jpg) no-repeat fixed bottom;
+    background-size: contain;
 }
 
+/*main page*/
+.up-main {
+    margin-top: 20px;
+}
 /* Center align the text within the three columns below the carousel */
-.up-mainpage .col-md-4 {
+.up-main .col-md-4 {
+    margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
 }
-.up-mainpage h2 {
-    font-weight: normal;
+.up-main .col-md-4 img {
+    margin-top: -40px;
 }
-.up-mainpage .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px;
+.up-main h1 {
+    font-size: 25px;
+    padding: 5px;
+}
+.up-main h2 {
+    font-size: 20px;
+    padding: 5px;
 }
 .up-mainpage-button {
+    display: block;
     float: right;
+    color: #31B0D5;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 0px;
+}
+.up-mainpage-divs {
+    padding: 10px 0px 20px 10px;
+    border: 1px solid #31B0D5;
+}
+
+/*subpages*/
+.up-titlehead {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.up-titlehead::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: #31B0D5;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+.up-titlehead h1 {
+    font-size: 25px;
+    padding: 5px;
+}
+
+.up-main .up-sub-content {
+    padding: 10px 10px 30px 10px;
 }
