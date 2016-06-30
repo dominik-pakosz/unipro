@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container up-main">
+        <div class="row">
+            <div class="col-md-11">
+                <h1>Edytuj</h1>
+            </div>
+            <div class="col-md-1">
+                <a class="btn btn-warning" href="{{ path('unipro-admin-list', {'repository': 'PagesContent'}) }}" role="button">Wróć &raquo;</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    <button type="submit" class="btn btn-info" formnovalidate>Zapisz</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

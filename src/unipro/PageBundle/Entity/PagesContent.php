@@ -3,6 +3,7 @@
 namespace unipro\PageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
@@ -19,16 +20,19 @@ class PagesContent
 
     /**
      * @ORM\Column(type="string", length=90)
+     * @Assert\NotBlank()
      */
     private $route;
 
     /**
      * @ORM\Column(type="string", length=50)
+     * @Assert\NotBlank()
      */
     private $title;
 
     /**
      * @ORM\Column(type="text")
+     * @Assert\NotBlank()
      */
     private $description;
 

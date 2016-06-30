@@ -17,20 +17,20 @@
 
             <nav class="cd-main-nav-wrapper">
                 <ul class="cd-main-nav">
-                    <li><a class="btn btn-info" href="#0"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dobierz wentylator</a></li>
+                    <li><a class="btn btn-info" href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Dobierz wentylator</a></li>
                     <li><a href="{{ path('unipro-subpage', {'subPage': 'o-firmie'}) }}">O firmie</a></li>
-                    <li><a href="{{ path('unipro-subpage', {'subPage': 'about'}) }}">Oferta</a></li>
-                    <li><a href="{{ path('unipro-subpage', {'subPage': 'about'}) }}">Usługi</a></li>
-                    <li><a href="{{ path('unipro-subpage', {'subPage': 'about'}) }}">Kontakt</a></li>
-                    <li><a href="{{ path('unipro-subpage', {'subPage': 'about'}) }}">Galeria</a></li>
+                    <li><a href="{{ path('unipro-subpage', {'subPage': 'oferta'}) }}">Oferta</a></li>
+                    <li><a href="{{ path('unipro-subpage', {'subPage': 'uslugi'}) }}">Usługi</a></li>
+                    <li><a href="{{ path('unipro-subpage', {'subPage': 'kontakt'}) }}">Kontakt</a></li>
+                    <li><a href="{{ path('unipro-subpage', {'subPage': 'galeria'}) }}">Galeria</a></li>
                     <li>
                         <a href="#0" class="cd-subnav-trigger"><span>Inne</span></a>
                         <ul>
-                            <li class="go-back"><a href="#0">Menu</a></li>
-                            <li><a href="#0">Działalność</a></li>
-                            <li><a href="#0">Stanowisko badawcze</a></li>
-                            <li><a href="#0">Technika doboru</a></li>
-                            <li><a href="#0" class="placeholder">Placeholder</a></li>
+                            <li class="go-back"><a href="#">Menu</a></li>
+                            <li><a href="{{ path('unipro-subpage', {'subPage': 'dzialalnosc'}) }}">Działalność</a></li>
+                            <li><a href="{{ path('unipro-subpage', {'subPage': 'stanowisko-badawcze'}) }}">Stanowisko badawcze</a></li>
+                            <li><a href="{{ path('unipro-subpage', {'subPage': 'technika-doboru'}) }}">Technika doboru</a></li>
+                            <li><a href="#" class="placeholder">Placeholder</a></li>
                         </ul>
                     </li>
                 </ul> <!-- .cd-main-nav -->

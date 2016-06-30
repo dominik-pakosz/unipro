@@ -5,10 +5,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-6 up-titlehead"><h1>{{ content.title }}</h1></div>
+                <div class="col-md-6 up-titlehead"><h1>{{ content.title|raw }}</h1></div>
             </div>
             <div class="row">
-                <div class="col-md-12 up-sub-content">{{ content.description }}</div>
+                <div class="col-md-12 up-sub-content">{{ content.description|raw }}</div>
             </div>
         </div>
     </div>
